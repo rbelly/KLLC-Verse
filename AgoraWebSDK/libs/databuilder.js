@@ -1,24 +1,3 @@
-var DataBuilder = function () {
-  var self = {
-    data: Array(),
-  };
-
-  self.add = function (key, value) {
-    self.data.push(key + ";" + value);
-  };
-
-  self.build = function () {
-    var i = 0;
-    var pre = "";
-    var str = "";
-    while (i < self.data.length) {
-      str += pre + self.data[i];
-      pre = "|";
-      i++;
-    }
-    self.data = Array();
-    return str;
-  };
-
-  return self;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:8936da5faffe8948e57087aa0e97d032c15c79ea940dc042d996f1e5a84ae8e5
+size 401
